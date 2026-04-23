@@ -1,18 +1,32 @@
-## Getting Started
+# Minesweeper
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A classic Minesweeper game implementation in Java using Swing GUI. Navigate a 10x10 grid, uncover tiles, and avoid the mines!
 
-## Folder Structure
+## Requirements
 
-The workspace contains two folders by default, where:
+- Java 8 or higher
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How to Play
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. **Compile the project:**
+   ```bash
+   javac *.java
+   ```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. **Run the game:**
+   ```bash
+   java App
+   ```
 
-## Dependency Management
+## Game Rules
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- **Left Click**: Uncover a tile
+  - If a tile contains a mine, the game ends and all mines are revealed
+  - If a tile is safe, a number appears showing adjacent mine count
+  - If no adjacent mines exist, the tile becomes blank and nearby tiles auto-reveal
+
+- **Right Click**: Flag a tile as a suspected mine with a 🚩
+
+## Game Objective
+
+Uncover all safe tiles without hitting any mines. Win by clicking on all non-mine tiles!
